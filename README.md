@@ -24,6 +24,19 @@ This code contains all the comparison and ablation experiments from the paper. B
     Functions.py -- The functions to be called.
 
 
+**Models**: Comparative experiments with 12 deep learning models, and ablation experiments of SGlow.
+   
+    SGlow.py -- Code for the implementation of the main model SGlow.
+    
+    RealNVP.py & Glow.py & GAN.py & VAE.py & CVAE.py & STGCN.py  -- Code for several complex implementations of comparative models.
+
+    Compared_models.py  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
+
+    Flows.py -- Layers and modules of the flow base model, including affine coupling layers, invertible convolutional layers and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
+
+    Ablas.py -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
+
+
 
 # Network Structure
 
