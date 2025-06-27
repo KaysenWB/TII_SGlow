@@ -4,23 +4,24 @@ Seeking Safety from Uncertainty: Probabilistic Vessel Trajectory Prediction with
 # Code Statement
 This code contains all the comparison and ablation experiments from the paper. Below are descriptions of the each file:
 
-    **main_run.py** -- Main entrance and run files for the model, including parameter settings and output of a batch of predictions. 
+    main_run.py -- Main entrance and run files for the model, including parameter settings and output of a batch of predictions. 
 
-    **dataloader.py** -- Loading the processed AIS data, and some more detailed processing before entering, such as normalisation, dividing the dataset, and setting up the batches to be predicted.  
+    dataloader.py -- Loading the processed AIS data, and some more detailed processing before entering, such as normalisation, dividing the dataset, and setting up the batches to be predicted.  
 
-    **processor.py** -- A framework for model operation, including loading the network, saving the network, training, testing and prediction operations.  
+    processor.py -- A framework for model operation, including loading the network, saving the network, training, testing and prediction operations.  
    
-    **utils.py** -- Some additional functions.  
+    utils.py -- Some additional functions.  
 
-    **visualization.py** -- Visualising a batch of predicted trajectories.  
+    visualization.py -- Visualising a batch of predicted trajectories.  
 
 
 
 
 **AIS_process**: AIS data preprocessing
    
-    **AIS_process.py** is the running file,
-    ** Functions.py** is the functions to be called.
+    AIS_process.py -- The running file. The raw AIS data are processed into trainable samples. Multiple samples are included in a batch including about 120 ships and corresponding adjacency matrices.
+    
+    Functions.py -- The functions to be called.
 
 
 
