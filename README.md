@@ -32,7 +32,7 @@ This code contains all the comparison and ablation experiments from the paper. B
 
     Compared_models.py  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
 
-    Flows.py -- Layers and modules of the flow base model, including affine coupling layers, invertible convolutional layers and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
+    Flows.py -- Layers and modules of the flow base models, including affine coupling layer, invertible convolutional layer and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
 
     Ablas.py -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
 
