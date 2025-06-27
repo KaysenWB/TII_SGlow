@@ -9,7 +9,10 @@ Network structure of SGlow
 
 # Figure02
 Network structure a flow including AFF and InvConv
-![Figure02](https://github.com/KaysenWB/TII_SGlow/blob/main/Fig3.jpg?raw=true)
+<img src="https://github.com/KaysenWB/TII_SGlow/blob/main/Fig3.jpg?raw=true" 
+     alt="Figure02"
+     width="50%" />
+
 
 # Figure03
 Qualitative comparison results of 12 deep learning models, including six discriminative models and five generative models
