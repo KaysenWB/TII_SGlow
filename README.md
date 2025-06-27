@@ -9,7 +9,7 @@ Network structure of SGlow
 
 # Figure02
 Network structure a flow including AFF and InvConv
-![Figure02](https://github.com/KaysenWB/TII_SGlow/blob/main/Fig3.jpg?raw=true){: style="width:70%;"}
+![Figure02](https://github.com/KaysenWB/TII_SGlow/blob/main/Fig3.jpg?raw=true){: style="width:40%;"}
 
 
 # Figure03
