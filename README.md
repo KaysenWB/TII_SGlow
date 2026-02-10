@@ -6,7 +6,7 @@ Seeking Safety from Uncertainty: Probabilistic Vessel Trajectory Prediction with
 
 This code contains all the comparison and ablation experiments from the paper. Below are descriptions of the each file:
 
-`main_run.py`: Main entrance and run files for the model, including parameter settings and output of a batch of predictions.
+`main_run.py` -- Main entrance and run files for the model, including parameter settings and output of a batch of predictions.
 
 `dataloader.py` -- Loading the processed AIS data, and some more detailed processing before entering, such as normalisation, dividing the dataset, and setting up the batches to be predicted.  
 
@@ -19,22 +19,22 @@ This code contains all the comparison and ablation experiments from the paper. B
 
 **AIS_process**: AIS data preprocessing
    
-    AIS_process.py -- The running file. The raw AIS data are processed into trainable samples. Multiple samples are included in a batch including about 120 ships and corresponding adjacency matrices.
+`AIS_process.py` -- The running file. The raw AIS data are processed into trainable samples. Multiple samples are included in a batch including about 120 ships and corresponding adjacency matrices.
     
-    Functions.py -- The functions to be called.
+`Functions.py` -- The functions to be called.
 
 
 **Models**: Comparative experiments with 12 deep learning models, and ablation experiments of SGlow.
    
-    SGlow.py -- Code for the implementation of the main model SGlow.
+`SGlow.py` -- Code for the implementation of the main model SGlow.
     
-    RealNVP.py & Glow.py & GAN.py & VAE.py & CVAE.py & STGCN.py  -- Code for several complex implementations of comparative models.
+`RealNVP.py` & `Glow.py` & `GAN.py` & `VAE.py` & `CVAE.py` & `STGCN.py`  -- Code for several complex implementations of comparative models.
 
-    Compared_models.py  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
+`Compared_models.py`  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
 
-    Flows.py -- Layers and modules of the flow base models, including affine coupling layer, invertible convolutional layer and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
+`Flows.py` -- Layers and modules of the flow base models, including affine coupling layer, invertible convolutional layer and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
 
-    Ablas.py -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
+`Ablas.py` -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
 
 # Environment Setup
 
