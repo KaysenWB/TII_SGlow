@@ -8,7 +8,7 @@ This repository contains the official implementation, all comparison experiments
 
 ### Main Framework
 The core code for model training, evaluation, and prediction is located in the root directory.
-- `main_run.py` -- The main entrance and execution script. Handles parameter configuration and outputs batch predictions.
+- `main_run.py` -- The main entrance and execution script. Handles parameter configuration and outputs predictions.
 - `dataloader.py` -- Loads and preprocesses the AIS data, including normalization, dataset splitting, and batch preparation for prediction.
 - `processor.py` -- The main operational framework, responsible for loading/saving models, and executing training, testing, and prediction procedures.
 - `utils.py` -- Contains utility functions, primarily for calculating evaluation metrics.
@@ -21,16 +21,11 @@ This module handles the conversion of raw AIS data into a format suitable for mo
 
 ### Models (`Models/`)
 This directory contains the implementations of our proposed model (**SGlow**), several comparative deep learning models, and the ablation study variants.
-- **Proposed Model:**
-    - `SGlow.py` -- The core implementation of our main model, **SGlow**.
-- **Comparative Models (Complex Implementations):**
-    - `RealNVP.py`, `Glow.py`, `GAN.py`, `VAE.py`, `CVAE.py`, `STGCN.py`
-- **Comparative Models (Simple Implementations):**
-    - `Compared_models.py` -- Implementations of several standard sequence models: LSTM, GRU, TCN, Seq2Seq, and Transformer.
-- **Foundation for Flow Models:**
-    - `Flows.py` -- Contains base layers and modules (e.g., affine coupling layer, invertible 1x1 convolution, loss computation) that support the implementations of **SGlow**, Glow, and RealNVP.
-- **Ablation Studies:**
-    - `Ablas.py` -- Implementation code for the ablation experiments, featuring multiple ablated variants of the **SGlow** model.
+- `SGlow.py` -- Code for the implementation of the main model SGlow. 
+- `RealNVP.py` & `Glow.py` & `GAN.py` & `VAE.py` & `CVAE.py` & `STGCN.py`  -- Code for several complex implementations of comparative models.
+- `Compared_models.py`  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
+- `Flows.py` -- Layers and modules of the flow base models, including affine coupling layer, invertible convolutional layer and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
+- `Ablas.py` -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
 
 
 ## Environment Setup
