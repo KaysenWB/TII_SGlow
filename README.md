@@ -2,30 +2,40 @@
 Seeking Safety from Uncertainty: Probabilistic Vessel Trajectory Prediction with a Flow-based Generative Model.
 
 
+已根据您提供的代码结构优化整体排版，使其更适合GitHub等平台的README展示。主要调整包括：使用层级标题突出结构、以列表形式清晰罗列文件、将联系方式整合到文末。
+
+---
+
 ## Code Statement
 
-This code contains all the comparison and ablation experiments from the paper. Below are descriptions of the each file:
+This repository contains the official implementation, all comparison experiments, and ablation studies from the paper. The project is structured into several key directories and modules for clarity.
 
-`main_run.py` -- Main entrance and run files for the model, including parameter settings and output of a batch of predictions.
-`dataloader.py` -- Loading the processed AIS data, and some more detailed processing before entering, such as normalisation, dividing the dataset, and setting up the batches to be predicted.  
-`processor.py` -- A framework for model operation, including loading the network, saving the network, training, testing and prediction operations.  
-`utils.py` -- Some additional functions.
-`visualization.py` -- Visualising a batch of predicted trajectories.  
+### Main Framework
+The core code for model training, evaluation, and prediction is located in the root directory.
+- `main_run.py` -- The main entrance and execution script. Handles parameter configuration and outputs batch predictions.
+- `dataloader.py` -- Loads and preprocesses the AIS data, including normalization, dataset splitting, and batch preparation for prediction.
+- `processor.py` -- The main operational framework, responsible for loading/saving models, and executing training, testing, and prediction procedures.
+- `utils.py` -- Contains utility functions, primarily for calculating evaluation metrics.
+- `visualization.py` -- Provides scripts for visualizing a batch of predicted trajectories.
 
+### Data Preprocessing (`AIS_process/`)
+This module handles the conversion of raw AIS data into a format suitable for model training.
+- `AIS_process.py` -- The main script to run. Processes raw AIS data into training samples. Each batch contains multiple samples, representing approximately 120 ships and their corresponding adjacency matrices.
+- `Functions.py` -- Contains auxiliary functions called by the main preprocessing script.
 
-**AIS_process**: AIS data preprocessing
-   
-`AIS_process.py` -- The running file. The raw AIS data are processed into trainable samples. Multiple samples are included in a batch including about 120 ships and corresponding adjacency matrices.
-`Functions.py` -- The functions to be called.
+### Models (`Models/`)
+This directory contains the implementations of our proposed model (**SGlow**), several comparative deep learning models, and the ablation study variants.
+- **Proposed Model:**
+    - `SGlow.py` -- The core implementation of our main model, **SGlow**.
+- **Comparative Models (Complex Implementations):**
+    - `RealNVP.py`, `Glow.py`, `GAN.py`, `VAE.py`, `CVAE.py`, `STGCN.py`
+- **Comparative Models (Simple Implementations):**
+    - `Compared_models.py` -- Implementations of several standard sequence models: LSTM, GRU, TCN, Seq2Seq, and Transformer.
+- **Foundation for Flow Models:**
+    - `Flows.py` -- Contains base layers and modules (e.g., affine coupling layer, invertible 1x1 convolution, loss computation) that support the implementations of **SGlow**, Glow, and RealNVP.
+- **Ablation Studies:**
+    - `Ablas.py` -- Implementation code for the ablation experiments, featuring multiple ablated variants of the **SGlow** model.
 
-
-**Models**: Comparative experiments with 12 deep learning models, and ablation experiments of SGlow.
-   
-`SGlow.py` -- Code for the implementation of the main model SGlow. 
-`RealNVP.py` & `Glow.py` & `GAN.py` & `VAE.py` & `CVAE.py` & `STGCN.py`  -- Code for several complex implementations of comparative models.
-`Compared_models.py`  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
-`Flows.py` -- Layers and modules of the flow base models, including affine coupling layer, invertible convolutional layer and loss computation. They are used to support implementations of SGlow and its ablated variants, Glow and RealNVP.
-`Ablas.py` -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
 
 ## Environment Setup
 
