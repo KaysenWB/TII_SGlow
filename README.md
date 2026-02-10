@@ -1,6 +1,7 @@
 # TII_SGlow
 Seeking Safety from Uncertainty: Probabilistic Vessel Trajectory Prediction with a Flow-based Generative Model.
 
+
 # Code Statement
 This code contains all the comparison and ablation experiments from the paper. Below are descriptions of the each file:
 
@@ -14,6 +15,23 @@ This code contains all the comparison and ablation experiments from the paper. B
 
     visualization.py -- Visualising a batch of predicted trajectories.  
 
+# Environment Setup
+
+**System Requirements**
+
+- Operating System: Linux (Ubuntu 18.04+ recommended)
+- Python 3.8 or higher
+- CUDA 11.3+ (for GPU acceleration, optional)
+
+**Dependencies**
+
+- torch==2.8.0
+- numpy==2.0.1
+- pandas==2.3.3
+- math==1.3.0
+- pytorch_tcn==1.2.3
+- matplotlib == 3.7.2
+- nflows == 0.14
 
 
 
