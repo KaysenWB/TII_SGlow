@@ -14,13 +14,13 @@ The core code for model training, evaluation, and prediction is located in the r
 - `utils.py` -- Contains utility functions, primarily for calculating evaluation metrics.
 - `visualization.py` -- Provides scripts for visualizing a batch of predicted trajectories.
 
-### Data Preprocessing (`AIS_process/`)
-This module handles the conversion of raw AIS data into a format suitable for model training.
+### Data Preprocessing (`AIS_process`)
+This directory handles the conversion of raw AIS data into a format suitable for model training.
 - `AIS_process.py` -- The main script to run. Processes raw AIS data into training samples. Each batch contains multiple samples, representing approximately 120 ships and their corresponding adjacency matrices.
 - `Functions.py` -- Contains auxiliary functions called by the main preprocessing script.
 
-### Models (`Models/`)
-This directory contains the implementations of our proposed model (**SGlow**), several comparative deep learning models, and the ablation study variants.
+### Models (`Models`)
+This directory contains the implementations of our proposed model (SGlow), several comparative deep learning models, and the ablation study variants.
 - `SGlow.py` -- Code for the implementation of the main model SGlow. 
 - `RealNVP.py` & `Glow.py` & `GAN.py` & `VAE.py` & `CVAE.py` & `STGCN.py`  -- Code for several complex implementations of comparative models.
 - `Compared_models.py`  -- Code for several simple implementations of comparative models, including LSTM, GRU, TCN, Seq2Seq,Transformer.
