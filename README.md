@@ -2,7 +2,7 @@
 Seeking Safety from Uncertainty: Probabilistic Vessel Trajectory Prediction with a Flow-based Generative Model.
 
 
-# Code Statement
+## Code Statement
 
 This code contains all the comparison and ablation experiments from the paper. Below are descriptions of the each file:
 
@@ -17,7 +17,7 @@ This code contains all the comparison and ablation experiments from the paper. B
 `visualization.py` -- Visualising a batch of predicted trajectories.  
 
 
-**AIS_process**: AIS data preprocessing
+### AIS_process: AIS data preprocessing
    
 `AIS_process.py` -- The running file. The raw AIS data are processed into trainable samples. Multiple samples are included in a batch including about 120 ships and corresponding adjacency matrices.
     
@@ -36,7 +36,7 @@ This code contains all the comparison and ablation experiments from the paper. B
 
 `Ablas.py` -- Implementation code for ablation experiments, multiple ablation variants of SGlow.
 
-# Environment Setup
+## Environment Setup
 
 **System Requirements**
 
@@ -55,7 +55,7 @@ This code contains all the comparison and ablation experiments from the paper. B
 - nflows == 0.14
 
 
-# Network Structure
+## Network Structure
 
 Figure01: Network structure of SGlow.
 ![Figure01](https://github.com/KaysenWB/TII_SGlow/blob/main/Fig2.jpg?raw=true)
@@ -68,7 +68,7 @@ Figure02: Network structure a flow including AFF and InvConv.
        width="50%" />
 </div>
 
-# Results
+## Results
 Figure03: Qualitative comparison results of 12 deep learning models, including six discriminative models and five generative models.
 ![Figure03](https://github.com/KaysenWB/TII_SGlow/blob/main/Fig5.jpg?raw=true)
 
