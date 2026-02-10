@@ -2,10 +2,6 @@
 Seeking Safety from Uncertainty: Probabilistic Vessel Trajectory Prediction with a Flow-based Generative Model.
 
 
-已根据您提供的代码结构优化整体排版，使其更适合GitHub等平台的README展示。主要调整包括：使用层级标题突出结构、以列表形式清晰罗列文件、将联系方式整合到文末。
-
----
-
 ## Code Statement
 
 This repository contains the official implementation, all comparison experiments, and ablation studies from the paper. The project is structured into several key directories and modules for clarity.
