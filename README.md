@@ -68,3 +68,19 @@ Figure04: SGlow's qualitative findings in different encounters.
 ![Figure04](https://github.com/KaysenWB/TII_SGlow/blob/main/Fig6.jpg?raw=true)
 
 
+
+## Citation
+If you find this repository useful in your research, please consider citing the following papers:
+```
+@ARTICLE{11534643,
+  author={Yang, Kaisen and Lu, Yuxu and Yang, Dong},
+  journal={IEEE Transactions on Industrial Informatics}, 
+  title={Seeking Safety From Uncertainty: Probabilistic Vessel Trajectory Prediction With a Flow-Based Generative Model}, 
+  year={2026},
+  pages={1-11},
+  publisher={IEEE}
+```
+
+## Contact
+If you have any queries or are interested in developing collaborations and communications, please contact me via email: kaisen.yang@connect.polyu.hk (Yang Kaisen).
+
