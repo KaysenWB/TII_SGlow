@@ -72,13 +72,13 @@ Figure04: SGlow's qualitative findings in different encounters.
 ## Citation
 If you find this repository useful in your research, please consider citing the following papers:
 ```
-@ARTICLE{11534643,
+@article{yang2026seeking,
+  title={Seeking Safety From Uncertainty: Probabilistic Vessel Trajectory Prediction With a Flow-Based Generative Model},
   author={Yang, Kaisen and Lu, Yuxu and Yang, Dong},
-  journal={IEEE Transactions on Industrial Informatics}, 
-  title={Seeking Safety From Uncertainty: Probabilistic Vessel Trajectory Prediction With a Flow-Based Generative Model}, 
+  journal={IEEE Transactions on Industrial Informatics},
   year={2026},
-  pages={1-11},
   publisher={IEEE}
+}
 ```
 
 ## Contact
