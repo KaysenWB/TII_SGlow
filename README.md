@@ -11,7 +11,7 @@ Official PyTorch implementation of **"Seeking Safety From Uncertainty: Probabili
 [![Python](https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-implementation-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
-**Kaisen Yang, Yuxu Lu, and Dong Yang**
+Kaisen Yang, Yuxu Lu, and Dong Yang
 
 </div>
 
@@ -95,11 +95,10 @@ The experiments use AIS trajectories collected from the Central Waterway of Vict
 | Setting | Value |
 |:--|:--|
 | Geographic area | 114.101 to 114.190 E, 22.265 to 22.324 N |
-| Trajectory segments | 50,174 |
 | Sampling interval | 10 s after interpolation |
-| Full segment length | 128 time steps |
 | Train/test split | 8:2 |
 | Observation/prediction ratio | 1:1 |
+| Evaluation windows | 32, 64, 96, and 128 total time steps |
 | Prediction horizons | 160, 320, 480, and 640 s |
 | Generated modalities | 20 trajectories per observation |
 
@@ -188,4 +187,4 @@ If this work is useful in your research, please consider starring the repository
 
 ## Contact
 
-For questions and research collaboration, contact [Kaisen Yang](mailto:kaisen.yang@connect.polyu.hk).
+For questions and research collaboration, contact Kaisen Yang at [kaisen.yang@connect.polyu.hk](mailto:kaisen.yang@connect.polyu.hk).
