@@ -11,7 +11,6 @@ Official PyTorch implementation of **"Seeking Safety From Uncertainty: Probabili
 [![Python](https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-implementation-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
-Kaisen Yang, Yuxu Lu, and Dong Yang
 
 </div>
 
