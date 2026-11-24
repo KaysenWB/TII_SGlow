@@ -126,6 +126,9 @@ TII_SGlow/
     |-- GAN.py
     |-- RealNVP.py
     `-- Glow.py
+└── SampleData/
+    ├── raw_ais.csv            # Raw AIS example
+    └── processed.cpkl         # the 5 examples of input data
 ```
 
 ## Getting Started
